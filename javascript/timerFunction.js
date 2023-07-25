@@ -1,5 +1,5 @@
 let timer = document.getElementById('timer');
-let mainContainer = document.querySelector('.main.container');
+let mainContainer = document.querySelector('.main-container');
 let btnStart = document.querySelectorAll('button')[0];
 let message = document.getElementById('info');
 let minutes = 24;
@@ -26,10 +26,10 @@ let startPomodoro = () => {
             message.style.display = 'block';
             message.innerHTML = 'Tómate 5 minutos de descanso';
             mainContainer.style.display = 'none';
-            7;
+            document.getElementById('audio').play();
             setTimeout(() => {
                 location.reload();
-            }, 3000);
+            }, 300000);
 
             minutes = 25;
             seconds = 0 + '0';
